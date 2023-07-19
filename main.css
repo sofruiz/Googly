@@ -1,0 +1,205 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    font-family: arial, sans-serif;
+    display: block;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    min-height: 100vh;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    padding: 6px;
+    height: 60px;
+    flex-shrink: 0;
+    box-sizing: border-box;
+}
+
+header nav {
+    display: flex;
+    flex-grow: 1;
+    justify-content: flex-end;
+}
+
+.nav-right-section {
+    display: flex;
+    list-style: none;
+    font: 13px/27px Roboto, Arial, sans-serif;
+    height: 48px;
+    position: relative;
+    box-sizing: border-box;
+    align-items: center;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.nav-right-section a, .icons {
+    color: black;
+    display: flex;
+    padding: 0 4px;
+    flex: 0 0 auto;
+    align-items: center;
+}
+
+.icons {
+    padding-left: 18px;
+    padding-right: 15px;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.menu {
+    background-image: url(https://img.icons8.com/ios-glyphs/90/0000000/circled-menu.png);
+    background-repeat: no-repeat;
+    width: 24px;
+    height: 24px;
+    background-size: contain;
+    padding-right: 16px;
+}
+
+.profile {
+    background-image: url(https://lh3.googleusercontent.com/-4hux6DAmL24/AAAAAAAAAAI/AAAAAAAAAAA/AHcKHtyYJ1sk9wPSPV2S0WqKewEvXMd-fg/photo.jpg?sz=46);
+    width: 32px;
+    height: 32px;
+    align-items: center;
+    border-radius: 50%;
+}
+
+.main-logo {
+    height: 192px;
+    margin: 0 auto;
+    margin-bottom: 35px;
+}
+
+.main-logo img {
+    height: 192px;
+}
+
+.main-input {
+    margin: 0 auto;
+    margin-bottom: 35px;
+}
+
+.main-input-container {
+    width: 582px;
+    height: 46px;
+    border-radius: 100px;
+    border: 1px solid #dfe1e5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-input input {
+    border: none;
+    outline: none;
+    width: 443px;
+    height: 27px;
+}
+
+.main-input-container:hover {
+    box-shadow: 0 1px 6px 0px #20212447;
+    border-color: #dfe1e500;
+}
+
+.search-icon, .micro-icon, .cam-icon {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.search-icon {
+    background-image: url(https://seekicon.com/free-icon-download/search_20.svg);
+    width: 14px;
+    height: 14px;
+    padding-left: 6%;
+}
+
+.micro-icon {
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Google_mic.svg/726px-Google_mic.svg.png);
+    width: 250px;
+    height: 200px;
+    padding-left: 1%;
+    cursor: pointer;
+}
+
+.cam-icon {
+    background-image: url(https://static.wikia.nocookie.net/logopedia/images/2/2b/Google_Lens_2021.svg);
+    width: 16px;
+    height: 16px;
+    padding-right: 7%;
+}
+
+.main-buttons {
+    width: 550px;
+    margin: 0 auto;
+}
+
+.main-buttons div {
+    display: inline-block;
+}
+
+.main-buttons button {
+    border: 0;
+    height: 36px;
+    background-color: #f8f9fa;
+    font-size: 14px;
+    color: #3c4043;
+    border-radius: 4px;
+    padding: 0 15px;
+    margin-right: 15px;
+    border: 1px solid #f8f9fa;
+    cursor: pointer;
+}
+
+.main-buttons button:hover {
+    box-shadow: 0 1px 1px rgba(0, 0, 0, .1);
+    background-color: #f8f9fa;
+    border: 1px solid #dadce0;
+    color: #202124;
+}
+
+footer {
+    background-color: #f2f2f2;
+    width: 100%;
+    height: 50px;
+    position: fixed;
+    font-size: 13px;
+    border-top: 1px solid #e4e4e4;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    bottom: 0;
+}
+
+footer ul {
+    list-style: none;
+    margin: 10px;
+    display: flex;
+    padding-left: 0;
+}
+
+.footer-left {
+    justify-self: left;
+}
+
+.footer-right {
+    justify-self: right;
+}
+
+footer ul li a {
+    color: #70757a;
+    margin: 15px;
+}
